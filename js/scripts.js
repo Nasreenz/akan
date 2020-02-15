@@ -29,7 +29,7 @@ function getAkanName(){
                     $('#message span:last-child').addClass("animated fadeInUp");
                 }
                 break;
-            }
+            }    
             else {
                 document.getElementById('message').innerHTML = "<div class=\"alert alert-danger\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">x</button><strong>Oh snap!</strong> You Should Select a Gender Too Determine Your Akan Name!</div>";
                 $('#message').addClass("animated shake");
