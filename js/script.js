@@ -1,117 +1,43 @@
-   function getInput(){
-   var centuary = parseInt(document.getElementById("centuary").value);
-   var year = parseInt(document.getElemtById("year").value);
-   var month = parseInt(document.getElementById("month").value);
-   var day = parseInt(document.getElementById("day").value);
+$(document).ready(function(){
+    $("#myBirthDate").mask("99/99/9999");
+});
 
-if(centuary==""){
-  alert("Input the correct gender");
-  return false;
-}else if (year=="") {
-  alert("input the correct year");
-}else if(month==""){
-  alert("input the correct month");
-}else if(dayOfMonth==""){
-  alert(input the correct date);
-  return false;
+
+function getAkanName(){
+    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
+    var femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
+    var myBirthday = document.getElementById("myBirthDate").value;
+    var myGender = document.getElementsByName("gender");
+    var dateOfBirth = new Date(myBirthday);
+    var dayOfTheWeek = dateOfBirth.getDay();
+    if(myBirthday === ""){
+        document.getElementById('message').innerHTML = "<div class=\"alert alert-danger\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">x</button><strong>Oh snap!</strong> You Didn't Submit a Valid Date!</div>";
+        $('#message').addClass("animated shake");
+    }
+    else {
+        for(var i=0;i<myGender.length;i++){
+            if(myGender[i].checked){
+                if(myGender[i].value === "Male"){
+                    document.getElementById('message').innerHTML = "<span><i class=\"fa fa-male\"></i></span>&nbsp;&nbsp; Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + maleAkanNames[dayOfTheWeek] + "</span>";
+                    $('#message span:first-child').addClass("animated fadeInDown");
+                    $('#message span:last-child').addClass("animated fadeInUp");
+                }
+                else {
+                    document.getElementById('message').innerHTML = "<span><i class=\"fa fa-female\"></i></span>&nbsp;&nbsp; Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + femaleAkanNames[dayOfTheWeek] + "</span>";
+                    $('#message span:first-child').addClass("animated fadeInDown");
+                    $('#message span:last-child').addClass("animated fadeInUp");
+                }
+                break;
+            }
+            else {
+                document.getElementById('message').innerHTML = "<div class=\"alert alert-danger\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">x</button><strong>Oh snap!</strong> You Should Select a Gender Too Determine Your Akan Name!</div>";
+                $('#message').addClass("animated shake");
+            }
+        }
+    }
 }
 
-}
-//calculate function
-function calculateDay(){
-  getInput();
-  dayOfTheWeeK=(((centuary/4)-2*centuary-1)+((5*year/4))+((26+(month+1)/10))+dayOfMonth) %7)
-  console.log(dayOfWeek);
-  return(Math.floor(dayOfWeek));
-  if (dayOfWeek<0){
-    dayOfWeek=dayOfWeekS * -1;
-    {
-      esle if (dayOfWeek<0) {
-        return dayOfWeek;
-
-      }
-    }
-
-    function checkOfDayOfWeek(){
-      day = calculateDay();
-      checkGender();
-      console.log("The function works")
-    }
-    //Array
-    let dayOfWeek=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday",
-  "Saturday"];
-  let maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-  let femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
-
-
-  function checkGender(){
-    var gen = document.getElementsByName("rads");
-    if (gen =[0].checked== true){
-      var gender ="male";
-
-    }else if (gen[1].checked== true) {
-      var gender = "female";
-    }else {
-      console.log("pass");
-    }
-    switch(gender){
-      case gender="male":
-      switch (day){
-        case(0 ||-0):
-          document.getElemtById("result").
-        break;
-        case(1 || -1):
-          document.getElemtById("result").
-        break;
-        case(2 || -2):
-          document.getElemtById("result").
-        break;
-        case(3 || -3):
-          document.getElemtById("result").
-        break;
-        case(4 || -4):
-          document.getElemtById("result").
-        break;
-        case(5 || -5):
-          document.getElemtById("result").
-        break;
-        case(6 || -6):
-            document.getElemtById("result").
-          break;
-          default
-
-
-  }
-  break;
-  case gender= "female":
-  switch(day){
-    case 0 || -0:
-    document.getElemtById("result").
-  break;
-  case 1 || -1:
-    document.getElemtById("result").
-  break;
-  case 2 || -2:
-    document.getElemtById("result").
-  break;
-  case 3 || -3:
-    document.getElemtById("result").
-  break;
-  case 4 || -4:
-    document.getElemtById("result").
-  break;
-  case 5 || -5:
-    document.getElemtById("result").
-  break;
-  case 6 || -6:
-      document.getElemtById("result").
-    break;
-
-
-  }
-  break
-    default :
-    console.log("pass");
-
-  }
+function clearAkanMessage(){
+    document.getElementById('message').innerHTML = "";
 }
