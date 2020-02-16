@@ -2,13 +2,12 @@ $(document).ready(function(){
     $("#myBirthDate").mask("99/99/9999");
 });
 
-
 function getAkanName(){
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     var femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
     var maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
     var myBirthday = document.getElementById("myBirthDate").value;
-    var myGender = document.getElementsByName("gender");
+    var gender = document.getElementsByName("gender");
     var dateOfBirth = new Date(myBirthday);
     var dayOfTheWeek = dateOfBirth.getDay();
     if(myBirthday === ""){
@@ -16,9 +15,9 @@ function getAkanName(){
 
     }
     else {
-        for(var i=0;i<myGender.length;i++){
-            if(myGender[i].checked){
-                if(myGender[i].value === "Male"){
+        for(var i=0;i<gender.length;i++){
+            if(gender[i].checked){
+                if(gender[i].value === "Male"){
                     document.getElementById('message').innerHTML = "<span><i class=\"male\"></i></span>&nbsp;&nbsp; Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + maleAkanNames[dayOfTheWeek] + "</span>";
                     $('#message span:first-child').addClass("fadeInUp");
                     $('#message span:last-child').addClass("fadeInDown");

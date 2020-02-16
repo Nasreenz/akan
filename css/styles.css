@@ -21,12 +21,12 @@ h1{
 .jumbotron{
 
 }
-img {
+.sidebar{
   float: left;
 }
 
  .well,.descrip{
-   text-align: left;
+   text-align: right;
    color:#618685;
  }
  .radio-niki{
@@ -36,14 +36,11 @@ img {
    color: #77a8a8;
  }
  .naky{
+   text-align: left;
    color:  #c83349;;
  }
- sidebar {
-   width: 30%;
-   float: right;
-   background-color: yellow;
- }
+
 
 .label{
-  color: red;
+  color: Blue;
 }
