@@ -1,13 +1,3 @@
-/********** FILE IMPORTS **********/
-/*************************************/
-
-@import url('bootstrap.min.css');
-
-
-
-/********** GENERAL STUFF **********/
-/*************************************/
-
 body {
   background-image: url("../images/akin.jpeg");
   background-repeat: no-repeat;
@@ -30,7 +20,20 @@ h1{
     color: ;
 }
 
+
  .well,.descrip{
    text-align: left;
    color:#618685;
  }
+ .radio-niki{
+   color: #c83349;
+ }
+ .niki{
+   color: #77a8a8;
+ }
+ .naky{
+   color:  #c83349;;
+ }
+.container{
+  color: #618685;
+}
