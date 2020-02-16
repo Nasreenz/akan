@@ -9,6 +9,11 @@ body {
 
 
 h1{
+
+  border-left: 2px solid red;
+  border-right: 4px solid red;
+  border-top: 6px solid orange;
+  border-bottom: 8px solid orange;
   font-size: 30px;
   text-align: center;
   color: #034f84;
