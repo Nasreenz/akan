@@ -21,6 +21,9 @@ h1{
 .jumbotron{
 
 }
+img {
+  float: left;
+}
 
  .well,.descrip{
    text-align: left;
@@ -35,9 +38,12 @@ h1{
  .naky{
    color:  #c83349;;
  }
-.container{
-  color: #618685;
-}
+ sidebar {
+   width: 30%;
+   float: right;
+   background-color: yellow;
+ }
+
 .label{
   color: red;
 }
