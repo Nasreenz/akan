@@ -20,6 +20,7 @@ git clone https://github.com/Nasreenz/akan.git and extract the zip file then ope
 |year|the ear you were born in|
 |month|the month you born in|
 |Day|date of birth|
+#bugs-takes in the mm,ddand yy but does not output the akanNames.
 ##Support and contact details:
 Email me at:nasrinanur@gmail.com
 Contact me at:0717156326
