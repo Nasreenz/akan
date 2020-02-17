@@ -15,7 +15,7 @@ This is a web application that takes a user's birthday and calculates the day of
 *Bootsrap
 
 ##Support and contact details:
-
+Email me at:nasrinanur@gmail.com
 Contact me at:0717156326
 
 MIT &COPY;Nasra
