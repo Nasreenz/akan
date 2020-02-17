@@ -48,20 +48,28 @@
 				</div>
 				<div class="form">
 					<form>
-								<label>year of birth</label><br>
-								<input type="text"  placeholder="year" id="year"></br>
+	          <div class="niki">
+	            <div>
+	              <label>Year of Birth</label><br>
+	              <input type="text" id="year" placeholder="Year born" minlength="4" maxlength="4" step="1" required><br>
+	            </div>
+	            <div>
+	              <label>Month of Birth</label><br>
+	              <input type="text" id="month" placeholder="Month born" min="1" maxlength="2" step="2" required><br>
+	            </div>
+	            <div>
+	              <label>Date of Birth</label><br>
+	              <input type="text" id="day" placeholder="Day born" minlength="1" maxlength="2" step="3" required><br>
+	            </div>
+	            <div>
+	              <label>Gender</label><br>
+	              <input type="radio" id="male" name="gender" value="male">Male<br>
+	              <input type="radio" id="female" name="gender" value="female">Female<br>
+	              <input type="submit" onclick="getName()" value="Submit">
+	            </div>
+	          </div>
 
-								<label>month of birth</label><br>
-								<input type="text"  placeholder="month" id="month"></br>
-
-								<label>day of birth</label><br>
-								<input type="text"  placeholder="day" id="day"></br>
-
-							<label class="label">Gender</label><br>
-								<input type="radio" id="male" name"gender" value="male">Male<br>
-								<input type="radio" id="female" name="gender" value="female">Female<br>
-								<input type="submit" onclick="getAkanName()" value="submit">
-						</div>
+	        </form>
        </div>
 
 		</body>

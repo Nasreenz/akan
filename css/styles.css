@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/Africa.jpg");
+  background-image: url("../images/img.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -26,9 +26,14 @@ h1{
   background-color: yellow;
 }
 
- .well,.descrip{
+ .container{
+   font-size: 25px;
+   color: #36286b;
+ }
+ .descrip{
+   font-size: 25px;
    text-align: left;
-   color:#618685;
+   color: #bc5a45;
  }
  .radio-niki{
    color: #c83349;
