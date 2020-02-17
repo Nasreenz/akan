@@ -22,7 +22,8 @@ h1{
 
 }
 .sidebar{
-  float: left;
+  float: right;
+  background-color: yellow;
 }
 
  .well,.descrip{
