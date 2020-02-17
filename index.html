@@ -45,32 +45,24 @@
 			</div>
 			<div class="naky">
 				<h5>Enter Your details Here:</h5>
+				</div>
 				<div class="form">
 					<form>
-						<div class="niki">
-							<label class="label">Birthday</label>
-							<div class="niki">
-								<input type="text" placeholder="mm/dd/yy" id="myBirthDate" class="form-control">
-							</div>
+								<label>year of birth</label><br>
+								<input type="text"  placeholder="year" id="year"></br>
+
+								<label>month of birth</label><br>
+								<input type="text"  placeholder="month" id="month"></br>
+
+								<label>day of birth</label><br>
+								<input type="text"  placeholder="day" id="day"></br>
+
+							<label class="label">Gender</label><br>
+								<input type="radio" id="male" name"gender" value="male">Male<br>
+								<input type="radio" id="female" name="gender" value="female">Female<br>
+								<input type="submit" onclick="getAkanName()" value="submit">
 						</div>
-						<div class="niki">
-							<label class="label">Gender</label>
-							<div class="radio-button">
-								<input type="radio" name="gender" id="male" value="Male">
-								<label>Male</label>
-							</div>
-							<div class="radio-button">
-								<input type="radio" name="gender" value="Female" id="female">
-								<label>Female</label>
-							</div>
-						</div>
-						<button type="submit" onclick="getAkanName(); console.log false;" class="btn btn-primary btn-xs"><i class="search" aria-hidden="true"></i>&nbsp;&nbsp;get your Akan Name</button>
-						<button type="reset" onclick="clearAkanMessage(); console.log false;" class="btn btn-default btn-xs"><i class="times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>
-					</form>
-				</div>
-				<div class="your-akan-name">
-					<p id="message" class="output"></p>
-				</div>
-			</div>
+       </div>
+
 		</body>
 </html>
