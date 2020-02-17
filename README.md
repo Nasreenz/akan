@@ -3,7 +3,7 @@ This is a website that tells one their Akan names according to the Ghanian namin
 ##Description
 This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.
 ##Author
--Nasra Ibrahim
+-Nasra Ibrahim Gedi
 
 ##Setup
 git clone https://github.com/Nasreenz/akan.git and extract the zip file then open my index.html file on your browser.
