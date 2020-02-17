@@ -6,6 +6,7 @@ This is a web application that takes a user's birthday and calculates the day of
 -Nasra Ibrahim
 
 ##Setup
+###This website was created on Atom and used downloaded bootstip and javascript files,The folders and files were created on on terminal and pushed to github where I had already created a repository for my website.
 
 ##Technologies used.
 *HTML
@@ -14,6 +15,7 @@ This is a web application that takes a user's birthday and calculates the day of
 *Bootsrap
 
 ##Support and contact details:
+
 Contact me at:0717156326
 
 MIT &COPY;Nasra
