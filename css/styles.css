@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/img.jpeg");
+  background-image: url("../images/now.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -28,12 +28,12 @@ h1{
 
  .container{
    font-size: 25px;
-   color: #36286b;
+   color: #white;
  }
  .descrip{
    font-size: 25px;
    text-align: left;
-   color: #bc5a45;
+   color: yellow;
  }
  .radio-niki{
    color: #c83349;

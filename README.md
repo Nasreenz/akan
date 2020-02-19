@@ -27,7 +27,7 @@ git clone https://github.com/Nasreenz/akan.git and extract the zip file then ope
 
 Email me at:nasrinanur@gmail.com
 Contact me at:0717156326
-
+## licence and copyright
 MIT &COPY;Nasra
-###License
+License
 copyright (C) {2020} ** {Nasra}
